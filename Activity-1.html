@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML DOM Activity-1</title>
+    <style>
+        .Alert 
+        {
+            color:aqua;
+            background-color:green;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome!</h1>
+    <p>Hello!</p>
+    <p>How are you?</p>
+    <script>
+        let div = document.createElement("div");
+        div.id = "Paragraph";
+        div.className = "Alert";
+        div.innerHTML = "<p>Congratulations! You have successfully created a new div element.</p>";
+        document.id.append(div);
+        let heading = document.getElementById("heading");
+        heading.innerHTML = "&#128512";
+        document.querySelector("header p").innerHTML = "<strong>Good job!</strong>";
+    </script>
+</body>
+</html>
