@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Solar System in JavaScript (ACP)</title>
+    <style>
+        .Alert 
+        {
+            color: rebeccapurple;
+            background-color: blanchedalmond;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+   <script>
+        let div = document.createElement("div");
+        div.id = "Paragraph";
+        div.className = "Alert";
+        div.innerHTML = "<p>Welcome to our Solar System!</p>";
+        document.body.append(div);
+        let heading = document.createElement("h1");
+        heading.id = "heading";
+        heading.innerHTML = "&#127774";
+        document.body.append(heading);
+        let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+        let list = document.createElement("ul");
+        planets.forEach(planet => {
+            let listItem = document.createElement("li");
+            listItem.textContent = planet;
+            list.appendChild(listItem);
+        });
+        document.body.appendChild(list);
+        about = document.createElement("p");
+        about.textContent = "Our Solar System consists of the Sun and the celestial bodies that are gravitationally bound to it, including the eight planets, their moons, dwarf planets, and other small objects.";
+        document.body.appendChild(about);
+    </script> 
+</body>
+</html>
